@@ -20,9 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->library('mongo_db', array('activate'=>'hp2i_bdfood'),'mongo');
-		$data = $this->mongo->select('*')->from('hishabs');
-		var_dump($data);
-		// $this->load->view('welcome_message');
+		require 'vendor/autoload.php'; // include Composer's autoloader
+		$client = new MongoDB\Client("mongodb://localhost:27018/hp2i_bdfood");
+		$result = $client->hp2i_bdfood->hishabs->find();
+		foreach ($result as $entry) {
+		    echo $entry['_id'], ': ', $entry['client'], "\n";
+		}
 	}
 }

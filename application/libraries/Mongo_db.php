@@ -54,10 +54,10 @@ Class Mongo_db{
 	function __construct($param)
 	{
 
-		if ( ! class_exists('Mongo') && ! class_exists('MongoClient'))
-		{
-			show_error("The MongoDB PECL extension has not been installed or enabled", 500);
-		}
+		// if ( ! class_exists('Mongo')/* && ! class_exists('MongoClient')*/)
+		// {
+		// 	show_error("The MongoDB PECL extension has not been installed or enabled", 500);
+		// }
 		$this->CI =& get_instance();
 		$this->CI->load->config('mongo_db');
 		$this->config = $this->CI->config->item('mongo_db');

@@ -29,9 +29,9 @@ $config['mongo_db']['active'] = 'default';
 
 $config['mongo_db']['default']['no_auth'] = FALSE;
 $config['mongo_db']['default']['hostname'] = 'localhost';
-$config['mongo_db']['default']['port'] = '27018';
-$config['mongo_db']['default']['username'] = 'pos2inReadUser';
-$config['mongo_db']['default']['password'] = 'c5f8cb77273c309d127584f370d17503';
+$config['mongo_db']['default']['port'] = '27017';
+$config['mongo_db']['default']['username'] = '';
+$config['mongo_db']['default']['password'] = '';
 $config['mongo_db']['default']['database'] = 'hp2i_bdfood';
 $config['mongo_db']['default']['db_debug'] = TRUE;
 $config['mongo_db']['default']['return_as'] = 'array';
@@ -42,9 +42,9 @@ $config['mongo_db']['default']['read_preference_tags'] = NULL;
 
 $config['mongo_db']['test']['no_auth'] = FALSE;
 $config['mongo_db']['test']['hostname'] = 'localhost';
-$config['mongo_db']['test']['port'] = '27018';
-$config['mongo_db']['test']['username'] = 'pos2inReadUser';
-$config['mongo_db']['test']['password'] = 'c5f8cb77273c309d127584f370d17503';
+$config['mongo_db']['test']['port'] = '27017';
+$config['mongo_db']['test']['username'] = '';
+$config['mongo_db']['test']['password'] = '';
 $config['mongo_db']['test']['database'] = 'hp2i_akijtobacco';
 $config['mongo_db']['test']['db_debug'] = TRUE;
 $config['mongo_db']['test']['return_as'] = 'array';
